@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1">
+    <title>MediaQuery.8</title>
+    <link rel="stylesheet" href="print.css" media="print">
+  <style>
+    .title > h1{
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      margin: .2em 0;
+     /* color: purple;*/
+    }
+    .container{
+        background-image: url("240_F_564824992_qndTrI4qD2Obh5XpKPlgrxtIvdbCZ4uw.jpg");
+        height: 240px;
+
+    }
+    article{
+        background-color: cornflowerblue;
+
+    }
+
+
+
+    @media screen and (min-width: 320px) and (max-width: 768px){
+        div.title > h1 {
+                color: yellow;
+        }
+   @media screen and (min-width: 768px) and (max-width: 1080px){
+        div.title > h1 {
+                color: green;
+        }
+
+
+
+   }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="Title">
+    <h1>this is the main title</h1>
+
+</div>
+    <section>
+      <article>
+        <h1>Title</h1>
+        <p>Text...</p>
+
+
+      </article>
+    </section>
+</div>
+</body>
+</html>
